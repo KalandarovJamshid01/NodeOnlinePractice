@@ -1,30 +1,57 @@
-// function great(name) {
-//   console.log(window);
-// }
-// great("Ibrohim");
+// // const Logger = require("./logger");
+// // const logger = new Logger();
 
-// module.exports.great = this.great;
+// // function great(name) {
+// //   console.log(window);
+// // }
+// // great("Ibrohim");
 
-const path = require("path");
+// // module.exports.great = this.great;
 
-const os = require("os");
+// const path = require("path");
 
-const fs = require("fs");
+// const os = require("os");
 
-const EventEmitter = require("events");
-const emitter = new EventEmitter();
-// const pathObj = path.parse(__filename);
-// console.log(pathObj);
-// console.log(path.basename("initialProject/index.js"));
+// const fs = require("fs");
 
-// const freeMem = os.freemem();
-// const userName = os.userInfo();
-// const totalMem = os.totalmem();
-// console.log(`Bo'sh xotira ${freeMem} bayt va username:${os.userInfo.userName}`);
+// // const pathObj = path.parse(__filename);
+// // console.log(pathObj);
+// // console.log(path.basename("initialProject/index.js"));
 
-// console.log(+totalMem / 1024 / 1024);
+// // const freeMem = os.freemem();
+// // const userName = os.userInfo();
+// // const totalMem = os.totalmem();
+// // console.log(`Bo'sh xotira ${freeMem} bayt va username:${os.userInfo.userName}`);
 
-emitter.on("message logged", () => {
-  console.log("Listener done");
-});
-emitter.emit("message logged");
+// // console.log(+totalMem / 1024 / 1024);
+
+// // logger.on("messageLogged", (arg) => {
+// //   console.log("Listener done", arg);
+// // });
+
+// // logger.log("message");
+
+// const http = require("http");
+// const server = http.createServer((req, res) => {
+//   if (req.url === "/") {
+//     res.write("Asosiy sahifa");
+//     res.end();
+//   }
+//   if (req.url === "/api/books") {
+//     res.write(JSON.stringify(["code", "comple", "refactoring"]));
+//     res.end();
+//   }
+// });
+
+// // server.on("connection", (socket) => {
+// //   console.log("new connect");
+// // });
+
+// server.listen(8000);
+// console.log(`${server.address().port} portni ewtiwni bowladik...`);
+
+const _ = require("underscore");
+const mongoose = require("mongoose");
+
+const a = _.contains([3, 5, 9], 5);
+console.log(a);
